@@ -9,13 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/v1/test")
 public class TestController {
 
-    @GetMapping
+    @GetMapping("/works")
     public String work(){
         return "Working...";
     }
 
-    @GetMapping
+    @GetMapping("/tests")
     public String test(){
         return "Testing";
+    }
+
+    @GetMapping("/clones")
+    public String clone(){
+        return "Cloning...";
     }
 }
