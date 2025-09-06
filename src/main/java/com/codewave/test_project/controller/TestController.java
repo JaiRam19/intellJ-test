@@ -10,7 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping
-    public String test(){
+    public String work(){
         return "Working...";
+    }
+
+    @GetMapping
+    public String test(){
+        return "Testing";
     }
 }
